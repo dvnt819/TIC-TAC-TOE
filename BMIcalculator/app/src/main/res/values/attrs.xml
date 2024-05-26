@@ -1,6 +1,0 @@
-<resources>
-    <declare-styleable name="CustomTextInputLayout">
-        <attr name="textInputHintColor" format="color"/>
-        <attr name="textInputStrokeColor" format="color"/>
-    </declare-styleable>
-</resources>
