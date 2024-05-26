@@ -1,3 +1,0 @@
-com.example.bmicalculator.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

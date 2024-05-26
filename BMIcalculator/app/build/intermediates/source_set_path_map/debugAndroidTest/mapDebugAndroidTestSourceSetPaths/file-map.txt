@@ -1,6 +1,0 @@
-com.example.bmicalculator.test.app-annotation-experimental-1.4.0-0 /home/dhvanit/.gradle/caches/transforms-4/05599256ab8815b3e070c174b0dbf238/transformed/annotation-experimental-1.4.0/res
-com.example.bmicalculator.test.app-core-1.5.0-1 /home/dhvanit/.gradle/caches/transforms-4/cdeaab977c8bc71778b5296d41352057/transformed/core-1.5.0/res
-com.example.bmicalculator.test.app-androidTest-2 /home/dhvanit/AndroidStudioProjects/BMIcalculator/app/build/generated/res/resValues/androidTest/debug
-com.example.bmicalculator.test.app-mergeDebugAndroidTestResources-3 /home/dhvanit/AndroidStudioProjects/BMIcalculator/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
-com.example.bmicalculator.test.app-mergeDebugAndroidTestResources-4 /home/dhvanit/AndroidStudioProjects/BMIcalculator/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
-com.example.bmicalculator.test.app-debugAndroidTest-5 /home/dhvanit/AndroidStudioProjects/BMIcalculator/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
