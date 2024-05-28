@@ -1,5 +1,6 @@
 package com.example.tic_tac_toe;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -7,9 +8,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class OneVsOne extends AppCompatActivity {
 
-    Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btnRestart;
+    Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btnRestart,btnBack;
     String b1, b2, b3, b4, b5, b6, b7, b8, b9;
     int count = 0, flag = 0;
 
@@ -21,6 +22,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         init();
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(OneVsOne.this,HomePage.class);
+                startActivity(i);
+                finish();
+            }
+        });
 
         btnRestart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         btnRestart = findViewById(R.id.btnRestart);
         txtWinner = findViewById(R.id.txtWinner);
         txtTurn = findViewById(R.id.txtTurn);
+        btnBack=findViewById(R.id.btnBack);
     }
 
     public void Check(View view) {

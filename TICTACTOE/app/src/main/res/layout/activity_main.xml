@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".OneVsOne"
     android:orientation="vertical"
     android:gravity="center"
     android:columnCount="3">
@@ -15,7 +15,8 @@
         android:layout_height="wrap_content"
         android:text="TIC-TAC-TOE"
         android:textSize="40sp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/txtTurn"
@@ -127,11 +128,26 @@
         android:layout_marginBottom="20dp"
         android:textSize="30dp"/>
 
-    <Button
-        android:id="@+id/btnRestart"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Restart"
-        android:textSize="25dp"
-        app:cornerRadius="8dp"/>
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textSize="25dp"
+            android:layout_marginRight="10dp"
+            app:cornerRadius="8dp"/>
+
+        <Button
+            android:id="@+id/btnRestart"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Restart"
+            android:textSize="25dp"
+            app:cornerRadius="8dp"/>
+    </LinearLayout>
+
 </LinearLayout>
