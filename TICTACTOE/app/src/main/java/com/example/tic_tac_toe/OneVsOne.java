@@ -26,8 +26,6 @@ public class OneVsOne extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(OneVsOne.this,HomePage.class);
-                startActivity(i);
                 finish();
             }
         });
