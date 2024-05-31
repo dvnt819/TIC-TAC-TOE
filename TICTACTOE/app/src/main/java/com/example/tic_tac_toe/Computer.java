@@ -56,6 +56,7 @@ public class Computer extends AppCompatActivity {
         Button btnCurrent = (Button) view;
         if (btnCurrent.getText().toString().equals("")) {
             btnCurrent.setText("X");
+            btnCurrent.setTextColor(getResources().getColor(R.color.blue));
             int row = Character.getNumericValue(view.getTag().toString().charAt(0));
             int col = Character.getNumericValue(view.getTag().toString().charAt(1));
             board[row][col] = 1;
@@ -74,6 +75,7 @@ public class Computer extends AppCompatActivity {
             board[bestMove[0]][bestMove[1]] = 2;
             Button btnCurrent = getButtonByTag(bestMove[0] + "" + bestMove[1]);
             btnCurrent.setText("O");
+            btnCurrent.setTextColor(getResources().getColor(R.color.red));
             moveCount++;
 
             if (checkWinner() == 0) {
@@ -128,7 +130,6 @@ public class Computer extends AppCompatActivity {
             return winner;
         } else if (moveCount == 9) {
             txtWinner.setText("It's a Draw!");
-            txtWinner.setTextColor(getResources().getColor(R.color.blue));
             return 3;
         }
         return 0;

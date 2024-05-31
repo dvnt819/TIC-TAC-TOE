@@ -1,6 +1,5 @@
 package com.example.tic_tac_toe;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -61,10 +60,12 @@ public class OneVsOne extends AppCompatActivity {
             if (flag == 0) {
                 txtTurn.setText("Turn to play : O");
                 btnCurrent.setText("X");
+                btnCurrent.setTextColor(getResources().getColor(R.color.blue));
                 flag = 1;
             } else {
                 txtTurn.setText("Turn to play : X");
                 btnCurrent.setText("O");
+                btnCurrent.setTextColor(getResources().getColor(R.color.red));
                 flag = 0;
             }
             if (count > 4) {
@@ -120,7 +121,6 @@ public class OneVsOne extends AppCompatActivity {
             isWinner = true;
         } else if (count == 9) {
             txtWinner.setText("It's a Draw");
-            txtWinner.setTextColor(getResources().getColor(R.color.blue));
             isWinner = true;
         }
 
